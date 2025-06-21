@@ -7,7 +7,7 @@ WORKDIR /var/www/html
 
 RUN apt update
 RUN apt install apache2 -y
-RUN echo "<h1> Hello I am Prajakta" >/var/www/html/index.html
+RUN echo "<h1> Hello I am Prajakta Shinde" >/var/www/html/index.html
 
 COPY index.html ./index.html
 
@@ -18,3 +18,4 @@ EXPOSE 80
 ENTRYPOINT apache2
 
 CMD apachectl -DFOREGROUND
+
